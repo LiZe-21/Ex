@@ -37,7 +37,7 @@ ax.set_ylabel("Etched Thickness (nm)")
 elif process =="증착":
   deposition_rate = 0.08 * (temp / 100) # 단위: nm/min
   deposited _thickness = deposition rate * time
-  st.write(예상 증착막 두께:**{round(deposited_thickness, 2)} Dm**"]
+  st.write(f"예상 증착막 두께:**{round(deposited_thickness, 2)} nm**"]
   
   fig, ax = plt.subplots()
   ax.plot([O, time], [O, deposited_thickness])
