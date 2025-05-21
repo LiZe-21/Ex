@@ -13,7 +13,7 @@ st.write(f"선택한 공정:**{process}**, 온도: {tempy}°C, 시간: {time}분
 # 산화 시뮬레이션
 if process == "산화":
   thickness = 0.1 * (temp / 100) * (time ** 0.5)
-  st.write(f"예상 산화막 두께: **[round(thickness,2)} nm**")
+  st.write(f"예상 산화막 두께: **{round(thickness,2)} nm**")
 
 fig, ax = plt.subplots()
 ax.plot([O, time], [O, thickness])
