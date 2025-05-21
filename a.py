@@ -24,14 +24,14 @@ st.pyplot(fig)
 
 # 식각 시뮬레이션
 elif process == "식각":
-etch_rate = 0.05 * (temp / 100) # 단위 nm/min
-etched_thickness = etch_rate * time
-st.write(f"예상 제거된 두께: **{round(etched_thickness, 2)} nm**")
-fig, ax = plt.subplots()
-ax.plot([0, time], [O, etched_thickness])
-ax.set_xlabel ("Time (min)")
-ax.set_ylabel("Etched Thickness (nm)")
-ax.set_ylabel("Etched Thickness (nm)")
+  etch_rate = 0.05 * (temp / 100) # 단위 nm/min
+  etched_thickness = etch_rate * time
+  st.write(f"예상 제거된 두께: **{round(etched_thickness, 2)} nm**")
+  fig, ax = plt.subplots()
+  ax.plot([0, time], [O, etched_thickness])
+  ax.set_xlabel ("Time (min)")
+  ax.set_ylabel("Etched Thickness (nm)")
+  ax.set_ylabel("Etched Thickness (nm)")
 
 # 증착 시뮬레이션
 elif process =="증착":
