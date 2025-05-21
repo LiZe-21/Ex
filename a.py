@@ -15,12 +15,12 @@ if process == "산화":
   thickness = 0.1 * (temp / 100) * (time ** 0.5)
   st.write(f"예상 산화막 두께: **{round(thickness,2)} nm**")
 
-fig, ax = plt.subplots()
-ax.plot([O, time], [O, thickness])
-ax.set_xlabel ("Time (min)")
-ax.set_ylabel ("Oxide Thickness (nm)")
-ax.set_title("Change in Oxide Thickness") 
-st.pyplot(fig)
+  fig, ax = plt.subplots()
+  ax.plot([O, time], [O, thickness])
+  ax.set_xlabel ("Time (min)")
+  ax.set_ylabel ("Oxide Thickness (nm)")
+  ax.set_title("Change in Oxide Thickness") 
+  st.pyplot(fig)
 
 # 식각 시뮬레이션
 elif process == "식각":
