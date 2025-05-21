@@ -17,7 +17,7 @@ if process == "산화":
 
 fig, ax = plt.subplots()
 ax.plot([O, time], [O, thickness])
-ax.set xlabel ("Time (min)")
+ax.set_xlabel ("Time (min)")
 ax.set_ylabel ("Oxide Thickness (nm)")
 ax.set_title("Change in Oxide Thickness") 
 st.pyplot(fig)
